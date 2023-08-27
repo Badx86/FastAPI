@@ -1,10 +1,5 @@
 # created by virtualenv automatically
 *
 /venv/
-/.idea/FastAPI.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/inspectionProfiles/profiles_settings.xml
-/.idea/vcs.xml
 __pycache__/
 .idea

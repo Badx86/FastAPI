@@ -3,3 +3,4 @@
 __pycache__/
 .idea
 todos.db
+todosapp.db

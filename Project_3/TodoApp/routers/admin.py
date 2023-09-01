@@ -1,5 +1,4 @@
 from typing import Annotated
-from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from fastapi import Depends, HTTPException, Path, APIRouter
 from starlette import status

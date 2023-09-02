@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append("..")
 
 from starlette.responses import RedirectResponse
@@ -34,6 +35,7 @@ router = APIRouter(
     responses={401: {"user": "Not authorized"}}
 )
 
+
 # Создание модели для создания пользователя
 class CreateUser(BaseModel):
     username: str
@@ -41,6 +43,7 @@ class CreateUser(BaseModel):
     first_name: str
     last_name: str
     password: str
+
 
 # Форма для аутентификации пользователя
 class LoginForm:
@@ -87,8 +90,8 @@ def authenticate_user(username: str, password: str, db):
     """
     Аутентификация пользователя
     """
-    user = db.query(models.Users)\
-        .filter(models.Users.username == username)\
+    user = db.query(models.Users) \
+        .filter(models.Users.username == username) \
         .first()
     if not user:
         return False

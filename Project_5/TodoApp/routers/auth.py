@@ -36,15 +36,6 @@ router = APIRouter(
 )
 
 
-# Создание модели для создания пользователя
-class CreateUser(BaseModel):
-    username: str
-    email: Optional[str]
-    first_name: str
-    last_name: str
-    password: str
-
-
 # Форма для аутентификации пользователя
 class LoginForm:
     def __init__(self, request: Request):

@@ -5,7 +5,7 @@
 ## To run:
 
 ### Online
-Visit the [link](https://fastapi-mz6o.onrender.com/auth/).
+Visit the [link](https://fastapi-mz6o.onrender.com/auth/) Long loading time, please wait a minute or two as the hosting is free, that's how it goes))
 
 ### Locally
 ```bash
